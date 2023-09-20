@@ -1,0 +1,24 @@
+.fab {
+    padding: 3px;
+    width: 30px;
+    height: 30px;
+    margin-bottom: 50px;
+}
+
+.footer-links ul li {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+.footer-links a {
+    text-decoration: none;
+}
+.footer-links a:hover{
+    text-decoration: underline;
+}
+
+footer {
+    width: 100vw;
+    height: 300px;
+    background-color: rgb(224, 224, 224);
+}
