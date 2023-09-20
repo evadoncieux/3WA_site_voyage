@@ -1,3 +1,4 @@
+footer
 * {
     margin: 0;
     padding: 0;
@@ -42,4 +43,31 @@ footer {
     width: 100vw;
     height: 300px;
     background-color: rgb(224, 224, 224);
+=======
+.blueheader {
+    background-color: rgb(37, 192, 202) ;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.blueheader h2, .blueheader h3 {
+    color: white;
+    padding: 13px;
+}
+
+.blueheader img {
+    height: 50px;
+}
+.container-fluid {
+    display: flex;
+    justify-content: space-between;
+}
+
+header i {
+    padding-top: 30px;
+}
+header a {
+    color: white;
+    text-decoration: none;
 }
