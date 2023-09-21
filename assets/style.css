@@ -215,3 +215,13 @@ header a {
     font-size: 1.2rem;
     padding-bottom: 10px;
 }
+
+.adv-counter {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+#counter {
+    color: red;
+}
