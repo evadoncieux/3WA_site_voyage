@@ -4,14 +4,8 @@ body {
     font-family: 'League Spartan', sans-serif;
 }
 
-body {
-    background-image: url('https://picjumbo.com/wp-content/uploads/beautiful-nature-mountain-scenery-with-flowers-free-photo.jpg');
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-position: center;
-}
 /************************CONNEXION*************************/
+
 .form-container input, .form-container textarea{
     border-radius: 20px;
     margin-top: 10px;
@@ -22,21 +16,20 @@ body {
     background-color: rgb(37, 192, 202) ;
     border: 0px;
     align-items: center;
-    margin: 10px;
+    margin: 10px 0px;
     border-radius: 30px;
-    padding: 10px;
+    padding: 5px 10px;
 }
 
 .login-card {
     position: relative;
-    /* top: 30vh */
     left: 30vw;
     width: fit-content;
     height: fit-content;
     background-color: rgba(255, 255, 255, 0.7);
     padding: 50px;
     border-radius: 30px;
-    margin: 50px;
+    margin: 30px;
 }
 
 /************************FOOTER*************************/
@@ -119,7 +112,7 @@ header a {
 /************************SEARCH*************************/
 
 
-.search-bg {
+.main-bg {
     background-image: url(./img/Grece.jpg);
     background-size: cover;
     height: 90vh;

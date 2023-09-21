@@ -19,7 +19,8 @@
     <div class="header">
         <header>
             <div class="blueheader">
-                <h2><img src="assets/img/logo_white_transparent_5000-removebg-preview.png" alt="logo"><a href="index.html">Voyager's Haven</a></h2>
+                <h2><img src="assets/img/logo_white_transparent_5000-removebg-preview.png" alt="logo"><a
+                        href="index.html">Voyager's Haven</a></h2>
                 <h3>01 00 00 00 00</h3>
                 <i class="fa-regular fa-user fa-bounce fa-2xl" style="color: #ffffff;"></i>
                 <a href="connexion.html">Mon compte</a>
@@ -27,7 +28,7 @@
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
+                    <ul class="navbar-nav w-100 justify-content-around">
                         <li class="nav-item">
                             <a class="nav-link active" aria-current="page" href="#">Bons plans</a>
                         </li>
@@ -50,31 +51,32 @@
     </div>
 
     <main>
-        <div class="container login-card">
+        <div class="main-bg">
+            <div class="search-card">
+                <div class="form-container">
+                    <h2>Connexion</h2>
+                    <form action="login.php" method="post">
+                        <label for="username">Nom d'utilisateur :</label>
+                        <input type="text" id="username" name="username" required><br>
 
-            <div class="form-container">
-                <h2>Connexion</h2>
-                <form action="login.php" method="post">
-                    <label for="username">Nom d'utilisateur :</label>
-                    <input type="text" id="username" name="username" required><br>
-                    
-                    <label for="password">Mot de passe :</label>
-                    <input type="password" id="password" name="password" required><br>
-                
-                <button type="submit">Se connecter</button>
-            </form>
+                        <label for="password">Mot de passe :</label>
+                        <input type="password" id="password" name="password" required><br>
+
+                        <button type="submit">Se connecter</button>
+                    </form>
+                </div>
+
+                <div class="form-container">
+                    <h2>Laisser un commentaire</h2>
+                    <form action="comment.php" method="post">
+                        <label for="comment">Commentaire :</label>
+                        <textarea id="comment" name="comment" required></textarea><br>
+
+                        <button type="submit">Poster le commentaire</button>
+                    </form>
+                </div>
+            </div>
         </div>
-        
-        <div class="form-container">
-            <h2>Laisser un commentaire</h2>
-            <form action="comment.php" method="post">
-                <label for="comment">Commentaire :</label>
-                <textarea id="comment" name="comment" required></textarea><br>
-                
-                <button type="submit">Poster le commentaire</button>
-            </form>
-        </div>
-    </div>
     </main>
 
     <footer>
