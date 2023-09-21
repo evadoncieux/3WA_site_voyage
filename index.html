@@ -7,6 +7,9 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="assets/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -22,9 +25,12 @@
                 <h2><img src="assets/img/logo_white_transparent_5000-removebg-preview.png" alt="logo"><a
                         href="index.html">Voyager's Haven</a></h2>
                 <h3>01 00 00 00 00</h3>
-                <i class="fa-regular fa-user fa-bounce fa-2xl" style="color: #ffffff;"></i>
-                <a href="connexion.html">Mon compte</a>
+                <div class="connexion">
+                    <i class="fa-regular fa-user fa-bounce fa-2xl" style="color: #ffffff;"></i>
+                    <a href="connexion.html">Mon compte</a>
+                </div>
         </header>
+
         <nav class="navbar navbar-expand-lg bg-body-tertiary">
             <div class="container-fluid">
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
@@ -111,7 +117,9 @@
         </div>
         </div>
 
-        <div class="adv-box" id="promo">
+        
+        <div class="blank"></div>
+        <div class="adv-box" id="promos">
             <h2>Nos promos inratables !</h2>
             <div class="adv-bg-christmas">
                 <div class="adv-card">
@@ -120,14 +128,14 @@
                     <p>1053€ par personne</p>
                 </div>
             </div>
-
+            
             <div class="adv-counter">
                 <p>Plus que <span id="counter">3</span> offres disponibles</p>
                 <p>Cliquez ICI pour en profiter</p>
             </div>
-
-
-
+            
+            
+            
             <div class="adv-bg-sydney">
                 <div class="adv-card">
                     <h3>Partez à Sydney pour le Nouvel An !</h3>
@@ -136,123 +144,135 @@
                 </div>
             </div>
         </div>
+        
+        <div class="blank"></div>
 
-        <div class="main-bg">
-            <div class="search-card">
-                <h2>Rechercher un séjour</h2>
-
-
-                <form>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="depart">Départ</label>
-                                <input type="text" class="form-control" id="depart" name="depart">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="destination">Destination</label>
-                                <input type="email" class="form-control" id="destination" name="destination">
-                            </div>
-                        </div>
+        <div class="carrousel">
+            <div class="slide">
+                <div class="slider-container">
+                    <div class="menu">
+                        <label for="slide-dot-1"></label>
+                        <label for="slide-dot-2"></label>
+                        <label for="slide-dot-3"></label>
                     </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="date-depart">Date départ</label>
-                                <input type="date" class="form-control" id="age" name="age">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="date_arrivee">Date arrivée</label>
-                                <input type="date" class="form-control" id="date_arrivee" name="date_arrivee">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="nb-voyageurs">Nombre de voyageurs</label>
-                                <input type="number" class="form-control" id="nb-voyageurs" name="nb-voyageurs">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="country">Mode de transport</label>
-                                <select class="form-select" aria-label="Default select example">
-                                    <option selected>Choisissez votre mode de transport</option>
-                                    <option value="1">Vélo</option>
-                                    <option value="2">Car</option>
-                                    <option value="3">Train</option>
-                                    <option value="4">Avion</option>
-                                </select>
-
-                            </div>
-                        </div>
-                    </div>
-                    <button type="submit" class="btn btn-primary submit">Rechercher</button>
-                </form>
-            </div>
-        </div>
-    </main>
-
-
-    <footer>
-        <div class="container">
-            <div class="row footer-info">
-                <div class="col-sm footer-links">
-                    <p class="footer-title">Suivez-nous sur</p>
-                    <a href="https://www.facebook.com" target="_blank"><i class="fab fa-2x fa-facebook-square"></i></a>
-                    <a href="https://www.instagram.com" target="_blank"><i
-                            class="fab fa-2x fa-instagram-square"></i></a>
-
-                    <p class="footer-title">Téléchargez notre application</p>
-                    <a href="https://www.apple.com/in/app-store/" target="_blank"><i class="fab fa-2x fa-apple"></i></a>
-                    <a href="https://play.google.com/store/games?pli=1" target="_blank"><i
-                            class="fab fa-2x fa-android"></i></a>
-                </div>
-                <div class="col-sm footer-links">
-                    <p class="footer-title">A propos de Voyager’s Haven</p>
-                    <ul class="footer-links">
-                        <a href="">
-                            <li>Qui sommes-nous</li>
-                        </a>
-                        <a href="">
-                            <li>Conditions générales</li>
-                        </a>
-                        <a href="">
-                            <li>Politique de confidentialité</li>
-                        </a>
-                        <a href="">
-                            <li>Politique des cookies</li>
-                        </a>
-                    </ul>
-                </div>
-                <div class="col-sm footer-links">
-                    <p class="footer-title">Assistance et informations utiles</p>
-                    <ul class="footer-links">
-                        <a href="">
-                            <li>Aide</li>
-                        </a>
-                        <a href="">
-                            <li>Procédure de remboursement</li>
-                        </a>
-                        <a href="">
-                            <li>Moyens de paiement</li>
-                        </a>
-                        <a href="">
-                            <li>Informations pratiques</li>
-                        </a>
-                    </ul>
+                    
+                    <input class="slide-input" id="slide-dot-1" type="radio" name="slides" checked>
+                    <img class="slide-img" src="assets/img/Grece.jpg">
+                    
+                    <input class="slide-input" id="slide-dot-2" type="radio" name="slides">
+                    <img class="slide-img" src="assets/img/Japon.jpg">
+                    
+                    <input class="slide-input" id="slide-dot-3" type="radio" name="slides">
+                    <img class="slide-img" src="assets/img/Australie.jpg">
+                    
+                    
                 </div>
             </div>
         </div>
-    </footer>
+
+        <div class="blank"></div>
+
+        <div class="anime container">
+            <figure class="snip1541 right"><img src="assets/img/pontnewyork.jpg" alt="sample89" />
+                <figcaption>
+                    <h3>Découvrez la ville de<span>New-York</span></h3>
+                </figcaption>
+                <a href="#"></a>
+            </figure>
+            <p>New York, officiellement nommée City of New York, connue également sous les noms et abréviations de New
+                York City ou NYC (pour éviter la confusion avec l'État de New York), et dont le surnom le plus connu est
+                The Big Apple (« La grosse pomme »), est la plus grande ville des États-Unis en nombre d'habitants et
+                l'une des plus importantes du continent américain et du monde. Elle se situe dans le Nord-Est du pays,
+                sur la côte atlantique, à l'extrémité sud-est de l'État de New York. La ville de New York se compose de
+                cinq arrondissements appelés boroughs : Manhattan, Brooklyn, Queens, le Bronx et Staten Island2. Ses
+                habitants s'appellent les New-Yorkais (en anglais : New Yorkers).
+                
+                New York exerce un impact significatif sur le commerce mondial, la finance, les médias, l'art, la mode,
+                la recherche, la technologie, l'éducation, le divertissement et le tourisme, regroupant l'ensemble des
+                caractéristiques d'une ville mondiale3.</p>
+                <p> Elle est parfois décrite comme la Capitale du monde ou la Ville des villes4,5. Si elle n'est plus la
+                    capitale fédérale des États-Unis depuis plus de deux siècles (elle occupe cette fonction de 1785 à
+                    17906), New York alimente pendant quelques décennies une rivalité financière et politique avec
+                    Philadelphie.</p>
+                    <figure class="snip1541 left"><img src="assets/img/grandcanyon.jpg" alt="sample31" />
+                        <figcaption>
+                            <h3>Découvrez les grands <br>canyons de<span>l'Arizona</span></h3>
+                        </figcaption>
+                        <a href="#"></a>
+            </figure>
+            <p>Le Grand Canyon est situé dans le sud-ouest des États-Unis, dans le nord de l'État de l'Arizona.
+
+                Les dimensions du Grand Canyon sont gigantesques, d'où son nom (en anglais, grand ne signifie pas grand,
+                mais à la fois immense, imposant, grandiose et superbe). Il s'étend sur environ 450 km de long2 entre le
+                lac Powell et le lac Mead, dont 350 km sont situés dans le parc national. Sa profondeur moyenne est de 1
+                300 mètres, avec un maximum de plus de 1 600 mètres3. Sa largeur varie de 5,5 km à 30 km4,2.
+
+                Le Grand Canyon n'est ni le plus profond, ni le plus imposant des canyons terrestres : le canyon de
+                Colca (3 400 m de profondeur) et le canyon de Cotahuasi (3 550 mètres de profondeur) au Pérou, le canyon
+                du Yarlung Tsangpo en Chine, le Barranca del Cobre au nord du Mexique et le Hells Canyon dans l'Idaho
+                sont des gorges plus profondes. Le site est cependant remarquable pour les points de vue offerts aux
+                visiteurs et pour les couches géologiques qui apparaissent sur les versants du canyon, bien connus des
+                géologues. Les strates racontent l'histoire du continent nord-américain. D'autre part, l'endroit est le
+                résultat spectaculaire du travail de l'érosion, notamment celle du fleuve Colorado qui coule en
+                contrebas.</p>
+        </div>
+
+        <footer>
+            <div class="container">
+                <div class="row footer-info">
+                    <div class="col-sm footer-links">
+                        <p class="footer-title">Suivez-nous sur</p>
+                        <a href="https://www.facebook.com" target="_blank"><i
+                                class="fab fa-2x fa-facebook-square"></i></a>
+                        <a href="https://www.instagram.com" target="_blank"><i
+                                class="fab fa-2x fa-instagram-square"></i></a>
+
+                        <p class="footer-title">Téléchargez notre application</p>
+                        <a href="https://www.apple.com/in/app-store/" target="_blank"><i
+                                class="fab fa-2x fa-apple"></i></a>
+                        <a href="https://play.google.com/store/games?pli=1" target="_blank"><i
+                                class="fab fa-2x fa-android"></i></a>
+                    </div>
+                    <div class="col-sm footer-links">
+                        <p class="footer-title">A propos de Voyager’s Haven</p>
+                        <ul class="footer-links">
+                            <a href="">
+                                <li>Qui sommes-nous</li>
+                            </a>
+                            <a href="">
+                                <li>Conditions générales</li>
+                            </a>
+                            <a href="">
+                                <li>Politique de confidentialité</li>
+                            </a>
+                            <a href="">
+                                <li>Politique des cookies</li>
+                            </a>
+                        </ul>
+                    </div>
+                    <div class="col-sm footer-links">
+                        <p class="footer-title">Assistance et informations utiles</p>
+                        <ul class="footer-links">
+                            <a href="">
+                                <li>Aide</li>
+                            </a>
+                            <a href="">
+                                <li>Procédure de remboursement</li>
+                            </a>
+                            <a href="">
+                                <li>Moyens de paiement</li>
+                            </a>
+                            <a href="">
+                                <li>Informations pratiques</li>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
 
 
-
+        <script src="fond.js"></script>
 </body>
 
 </html>

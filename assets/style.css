@@ -4,6 +4,10 @@ body {
     font-family: 'League Spartan', sans-serif;
 }
 
+.blank {
+    height: 200px;
+}
+
 /************************CONNEXION*************************/
 
 
@@ -82,16 +86,22 @@ footer {
 /************************HEADER*************************/
 
 .blueheader {
-    background-color: rgb(37, 192, 202);
+    background-color: rgb(37, 192, 202) ;
     height: 70px;
     display: flex;
     justify-content: space-between;
 }
 
-.blueheader h2,
-.blueheader h3 {
+.blueheader h2, .blueheader h3 {
     color: white;
     padding: 13px;
+}
+.blueheader h3 {
+    padding-left: 300px;
+}
+
+.connexion {
+    padding-right: 100px;
 }
 
 .blueheader img {
@@ -184,7 +194,7 @@ header a {
     height: 200px;
     width: 50vw;
     margin: 20px;
-
+    
     background-image: url(./img/Dyker-Heights-GettyImages-895677840.jpg.webp);
     background-size: cover;
     background-position: center;
@@ -224,4 +234,175 @@ header a {
 
 #counter {
     color: red;
+}
+
+
+/************************ADVERT*************************/
+
+
+.carrousel, .slide {
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+img {
+    max-width: 100%;
+}
+.slider-container {
+    max-width: 800px;
+    position: relative;
+    margin: auto;
+    height: 350px;
+    overflow: hidden;
+}
+.menu {
+    position: absolute;
+    left: 0;
+    z-index: 11;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+}
+.menu label {
+    cursor: pointer;
+    display: inline-block;
+    width: 20px;
+    height: 15px;
+    background: rgb(37, 192, 202);
+    border-radius: 50px;
+    margin: 1 0.2em 1em;
+}
+.menu label:hover,.menu label:focus {
+    background: #1c87c9;
+}
+.slide-input{
+    opacity: 0;
+}
+.slide-img {
+    width: 100%;
+    height: 325px;
+    position: absolute;
+    top: 0;
+    left: 100%;
+    z-index: 10;
+    transition: left 0s 0.75s;
+    
+}
+[id^="slide"]:checked + .slide-img {
+    left: 0;
+    z-index: 100;
+    transition: left 0.65s ease-out;
+}
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800;);
+.snip1541 {
+  background-color: #fff;
+  color: #fff;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 4px;
+  margin: 10px;
+  max-width: 315px;
+  min-width: 771px;
+  overflow: hidden;
+  position: relative;
+  text-align: center;
+  width: 100%;
+}
+
+.snip1541 * {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  -webkit-transition: all 0.45s ease;
+  transition: all 0.45s ease;
+}
+
+.snip1541 img {
+  vertical-align: top;
+  max-width: 100%;
+  backface-visibility: hidden;
+  height: 380px;
+  width: 771px;
+}
+
+.snip1541 figcaption {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  align-items: center;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  line-height: 1em;
+  opacity: 0;
+  -webkit-transform: translateX(75%) rotate(180deg);
+  transform: translateX(75%) rotate(180deg);
+}
+
+.snip1541 figcaption:before {
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); 
+  background-color: rgb(37, 192, 202);
+  border-radius: 50%;
+  content: '';
+  height: 200px;
+  left: 50%;
+  position: absolute;
+  top: 50%;
+  width: 200px;
+  z-index: -1;
+}
+
+.snip1541 h3 {
+  font-size: 3em;
+  font-weight: 400;
+  letter-spacing: 1px;
+  margin: 0;
+  text-transform: uppercase;
+  color:rgb(255, 229, 0);
+}
+
+.snip1541 h3 span {
+  display: block;
+  font-weight: 800;
+  color:rgb(255, 229, 0);
+}
+
+.snip1541 a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 1;
+}
+
+.snip1541:hover > img,
+.snip1541.hover > img {
+  opacity: 0.1;
+}
+
+.snip1541:hover figcaption,
+.snip1541.hover figcaption {
+  -webkit-transform: translate(0px) rotate(0deg);
+  transform: translate(0px) rotate(0deg);
+  opacity: 1;
+}
+
+.right {
+    margin-right: 550px;
+}
+
+.left {
+    margin-left: 550px;
+}
+
+.anime p {
+    display: flex;
+    text-align: center;
 }
