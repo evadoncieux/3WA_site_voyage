@@ -8,21 +8,27 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <link rel="stylesheet" href="assets/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;200;300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <title>Voyager's Haven</title>
 </head>
 
 <body>
     <header>
         <div class="blueheader">
-            <h2><img src="assets/img/logo_white_transparent_5000-removebg-preview.png" alt="logo">Voyager's Haven</h2>
+            <h2><img src="assets/img/logo_white_transparent_5000-removebg-preview.png" alt="logo"><a
+                    href="index.html">Voyager's Haven</a></h2>
             <h3>01 00 00 00 00</h3>
             <i class="fa-regular fa-user fa-bounce fa-2xl" style="color: #ffffff;"></i>
             <a href="connexion.html">Mon compte</a>
     </header>
+
     <nav class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav w-100 justify-content-around">
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="#">Bons plans</a>
                     </li>
@@ -44,6 +50,68 @@
     </nav>
 
     <main>
+        <div class="search-box">
+            <div class="search-bg">
+                <div class="search-card">
+                    <h2>Rechercher un séjour</h2>
+
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="depart">Départ</label>
+                                    <input type="text" class="form-control" id="depart" name="depart">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="destination">Destination</label>
+                                    <input type="email" class="form-control" id="destination" name="destination">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="date-depart">Date départ</label>
+                                    <input type="date" class="form-control" id="age" name="age">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="date_arrivee">Date arrivée</label>
+                                    <input type="date" class="form-control" id="date_arrivee" name="date_arrivee">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="nb-voyageurs">Nombre de voyageurs</label>
+                                    <input type="number" class="form-control" id="nb-voyageurs" name="nb-voyageurs">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="country">Mode de transport</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Choisissez votre mode de transport</option>
+                                        <option value="1">Vélo</option>
+                                        <option value="2">Car</option>
+                                        <option value="3">Train</option>
+                                        <option value="4">Avion</option>
+                                    </select>
+
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary submit">Rechercher</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <div class="adv-box"></div>
 
     </main>
 
