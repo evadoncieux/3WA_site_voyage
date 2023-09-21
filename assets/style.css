@@ -1,20 +1,20 @@
 /************************GENERALITIES*************************/
 
 body {
-    font-family: "League Spartan", sans-serif;
+    font-family: 'League Spartan', sans-serif;
 }
 
 /************************CONNEXION*************************/
 
-.form-container input,
-.form-container textarea {
+
+.form-container input, .form-container textarea {
     border-radius: 20px;
     margin-top: 10px;
     border: 0px;
 }
 
 .form-container button {
-    background-color: rgb(37, 192, 202);
+    background-color: rgb(37, 192, 202) ;
     border: 0px;
     align-items: center;
     margin: 10px 0px;
@@ -47,7 +47,7 @@ footer * {
 }
 
 .footer-info {
-    padding: 50px 0px 0px 0px;
+    padding:50px 0px 0px 0px;
     color: rgb(108, 108, 108);
     font-size: 1rem;
 }
@@ -149,7 +149,7 @@ header a {
 }
 
 .submit {
-    background-color: rgb(37, 192, 202);
+    background-color: rgb(37, 192, 202) ;
     border: 0px;
     align-items: center;
     margin: 10px;
