@@ -16,106 +16,122 @@
 </head>
 
 <body>
-    <header>
-        <div class="blueheader">
-            <h2><img src="assets/img/logo_white_transparent_5000-removebg-preview.png" alt="logo"><a
-                    href="index.html">Voyager's Haven</a></h2>
-            <h3>01 00 00 00 00</h3>
-            <i class="fa-regular fa-user fa-bounce fa-2xl" style="color: #ffffff;"></i>
-            <a href="connexion.html">Mon compte</a>
-    </header>
-
-    <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav w-100 justify-content-around">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Bons plans</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Vols</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Hôtel</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Séjour</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Location</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-
-    <main>
-        <div class="search-box">
-            <div class="search-bg">
-                <div class="search-card">
-                    <h2>Rechercher un séjour</h2>
-
-                    <form>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="depart">Départ</label>
-                                    <input type="text" class="form-control" id="depart" name="depart">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="destination">Destination</label>
-                                    <input type="email" class="form-control" id="destination" name="destination">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="date-depart">Date départ</label>
-                                    <input type="date" class="form-control" id="age" name="age">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="date_arrivee">Date arrivée</label>
-                                    <input type="date" class="form-control" id="date_arrivee" name="date_arrivee">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="nb-voyageurs">Nombre de voyageurs</label>
-                                    <input type="number" class="form-control" id="nb-voyageurs" name="nb-voyageurs">
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="form-group">
-                                    <label for="country">Mode de transport</label>
-                                    <select class="form-select" aria-label="Default select example">
-                                        <option selected>Choisissez votre mode de transport</option>
-                                        <option value="1">Vélo</option>
-                                        <option value="2">Car</option>
-                                        <option value="3">Train</option>
-                                        <option value="4">Avion</option>
-                                    </select>
-
-                                </div>
-                            </div>
-                        </div>
-                        <button type="submit" class="btn btn-primary submit">Rechercher</button>
-                    </form>
+    <div class="header">
+        <header>
+            <div class="blueheader">
+                <h2><img src="assets/img/logo_white_transparent_5000-removebg-preview.png" alt="logo"><a
+                        href="index.html">Voyager's Haven</a></h2>
+                <h3>01 00 00 00 00</h3>
+                <i class="fa-regular fa-user fa-bounce fa-2xl" style="color: #ffffff;"></i>
+                <a href="connexion.html">Mon compte</a>
+        </header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav w-100 justify-content-around">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Bons plans</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Vols</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Hôtel</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Séjour</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Location</a>
+                        </li>
+                    </ul>
                 </div>
             </div>
+        </nav>
+    </div>
+
+    <main>
+        <div class="main-bg search-box">
+            <div class="search-card">
+                <h2>Rechercher un séjour</h2>
+
+                <form>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="depart">Départ</label>
+                                <input type="text" class="form-control" id="depart" name="depart">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="destination">Destination</label>
+                                <input type="email" class="form-control" id="destination" name="destination">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="date-depart">Date départ</label>
+                                <input type="date" class="form-control" id="age" name="age">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="date_arrivee">Date arrivée</label>
+                                <input type="date" class="form-control" id="date_arrivee" name="date_arrivee">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="nb-voyageurs">Nombre de voyageurs</label>
+                                <input type="number" class="form-control" id="nb-voyageurs" name="nb-voyageurs">
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="country">Mode de transport</label>
+                                <select class="form-select" aria-label="Default select example">
+                                    <option selected>Choisissez votre mode de transport</option>
+                                    <option value="1">Vélo</option>
+                                    <option value="2">Car</option>
+                                    <option value="3">Train</option>
+                                    <option value="4">Avion</option>
+                                </select>
+
+                            </div>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary submit">Rechercher</button>
+                </form>
+            </div>
+        </div>
         </div>
 
         <div class="adv-box">
-            <div class="adv-bg">
-                <h2>Nos promos inratables !</h2>
+            <h2>Nos promos inratables !</h2>
+            <div class="adv-bg-christmas">
                 <div class="adv-card">
                     <h3>Un Noël magique en famille à New-York</h3>
+                    <p>Vol aller-retour + hôtel 4* pour quatre personnes</p>
+                    <p>1053€ par personne</p>
+                </div>
+            </div>
+
+            <div>
+                
+            </div>
+
+
+
+            <div class="adv-bg-sydney">
+                <div class="adv-card">
+                    <h3>Partez à Sydney pour le Nouvel An !</h3>
+                    <p>Vol aller-retour + hôtel 4* pour deux personnes</p>
+                    <p>2500€ tout compris</p>
                 </div>
             </div>
         </div>
