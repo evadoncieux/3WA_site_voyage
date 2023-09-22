@@ -381,6 +381,7 @@ img {
     z-index: 10;
     transition: left 0s 0.75s;
 }
+
 [id^="slide"]:checked + .slide-img {
     left: 0;
     z-index: 100;
