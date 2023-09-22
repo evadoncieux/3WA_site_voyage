@@ -15,6 +15,10 @@ hr.rounded {
     margin: 50px auto;
 }
 
+h2 {
+    text-align: center;
+}
+
 /************************CONNEXION*************************/
 
 .login-bg {
@@ -266,20 +270,18 @@ header a {
     position: relative;
     left: 20vw;
     width: 60vw;
-    background-color: rgb(255, 234, 0);
+    /* background-color: rgb(255, 234, 0); */
     padding: 30px;
     margin: 30px;
     border-radius: 30px;
 }
 
-.offer-box h2 {
-    text-align: center;
-}
+
 .offer-bg {
     display: flex;
     border-radius: 30px;
     padding: 0;
-    height: 200px;
+    height: 250px;
     width: 50vw;
     margin: 30px auto;
     background-size: cover;
@@ -301,7 +303,7 @@ header a {
     background-color: rgba(255, 255, 255, 0.7);
     padding: 25px;
     border-radius: 30px 0px 0px 30px;
-    height: 200px;
+    height: 250px;
     width: 25vw;
     overflow: auto;
     text-overflow: ellipsis;
