@@ -29,6 +29,20 @@ hr.rounded {
     overflow: auto;
 }
 
+.login-bg .overlay-card {
+    position: absolute;
+    top: 20vh;
+    left: 22vw;
+    width: 60vw;
+    height: 300px;
+    height: fit-content;
+    background-color: rgba(255, 255, 255, 0.7);
+    padding: 50px;
+    border-radius: 30px;
+    max-height: 80vh; /* Adjust the value as needed */
+    overflow-y: auto;
+}
+
 .form-container input,
 .form-container textarea {
     border-radius: 20px;
@@ -194,7 +208,7 @@ header a {
     height: 90vh;
 }
 
-.overlay-card {
+.search-bg .overlay-card {
     position: absolute;
     top: 30vh;
     left: 22vw;
