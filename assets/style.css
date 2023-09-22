@@ -1,7 +1,7 @@
 /************************GENERALITIES*************************/
 
 body {
-    font-family: 'League Spartan', sans-serif;
+    font-family: "League Spartan", sans-serif;
 }
 
 .blank {
@@ -13,30 +13,30 @@ hr.rounded {
     border-radius: 5px;
     width: 90vw;
     margin: 50px auto;
-
-  }
+}
 
 /************************CONNEXION*************************/
 
-login-form {
-    font-family: Arial, sans-serif;
-    margin: 20px;
-    background-image: url('https://picjumbo.com/wp-content/uploads/beautiful-nature-mountain-scenery-with-flowers-free-photo.jpg');
+.login-bg {
+    background-image: url("https://picjumbo.com/wp-content/uploads/beautiful-nature-mountain-scenery-with-flowers-free-photo.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-position: center;
-    background-color: rgba(255, 255, 255, 0.8); 
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 100wv;
+    height: 100vh;
 }
 
-.form-container input, .form-container textarea {
+.form-container input,
+.form-container textarea {
     border-radius: 20px;
     margin-top: 10px;
-    border: 0px;
+    border: 1px solid rgb(192, 192, 192);
 }
 
 .form-container button {
-    background-color: rgb(37, 192, 202) ;
+    background-color: rgb(37, 192, 202);
     border: 0px;
     align-items: center;
     margin: 10px 0px;
@@ -56,22 +56,22 @@ login-form {
 }
 
 h1 {
-    color: #008000; 
+    color: #008000;
 }
 
 .form-container {
-    background-color: rgba(255, 255, 255, 0.8); 
+    background-color: rgba(255, 255, 255, 0.8);
     padding: 20px;
     border-radius: 10px;
     margin-top: 20px;
 }
 
 .form-container h2 {
-    color: #008000; 
+    color: #008000;
 }
 
 .form-container label {
-    color: #008000; 
+    color: #008000;
     display: block;
     margin-bottom: 5px;
 }
@@ -84,7 +84,7 @@ h1 {
 
 .form-container button {
     padding: 10px 20px;
-    background-color: #008009; 
+    background-color: #008009;
     border: none;
     color: white;
     font-size: 16px;
@@ -93,7 +93,11 @@ h1 {
 }
 
 .form-container button:hover {
-    background-color: #006400; 
+    background-color: #006400;
+}
+
+.form-container textarea {
+    width: 100%;
 }
 
 /************************FOOTER*************************/
@@ -110,7 +114,7 @@ footer * {
 }
 
 .footer-info {
-    padding:50px 0px 0px 0px;
+    padding: 50px 0px 0px 0px;
     color: rgb(108, 108, 108);
     font-size: 1rem;
 }
@@ -145,13 +149,14 @@ footer {
 /************************HEADER*************************/
 
 .blueheader {
-    background-color: rgb(37, 192, 202) ;
+    background-color: rgb(37, 192, 202);
     height: 70px;
     display: flex;
     justify-content: space-between;
 }
 
-.blueheader h2, .blueheader h3 {
+.blueheader h2,
+.blueheader h3 {
     color: white;
     padding: 13px;
 }
@@ -181,16 +186,16 @@ header a {
 
 /************************SEARCH*************************/
 
-.main-bg {
-    display: flex;
+.search-bg {
+    /* display: flex; */
     background-image: url(./img/Grece.jpg);
     background-size: cover;
     height: 90vh;
 }
 
-.search-card {
+.overlay-card {
     position: absolute;
-    top: 30vh;
+    top: 20vh;
     left: 22vw;
     width: 60vw;
     height: 300px;
@@ -202,7 +207,7 @@ header a {
 
 .search-card input {
     border-radius: 20px;
-    margin: 10px;
+    margin: 200px;
     border: 0px;
 }
 
@@ -218,7 +223,7 @@ header a {
 }
 
 .submit {
-    background-color: rgb(37, 192, 202) ;
+    background-color: rgb(37, 192, 202);
     border: 0px;
     align-items: center;
     margin: 10px;
@@ -229,6 +234,10 @@ header a {
     margin: auto;
     text-align: center;
     margin-bottom: 15px;
+}
+
+.search-box {
+    height: 900px;
 }
 
 /************************ADVERT*************************/
@@ -246,26 +255,26 @@ header a {
 .adv-box h2 {
     text-align: center;
 }
-.adv-bg-christmas{
+.adv-bg-christmas {
     display: flex;
     border-radius: 30px;
     padding: 0;
     height: 200px;
     width: 50vw;
     margin: 20px;
-    
+
     background-image: url(./img/Dyker-Heights-GettyImages-895677840.jpg.webp);
     background-size: cover;
     background-position: center;
 }
-.adv-bg-sydney{
+.adv-bg-sydney {
     display: flex;
     border-radius: 30px;
     padding: 0;
     height: 200px;
     width: 50vw;
     margin: 20px;
-    
+
     background-image: url(./img/Australie.jpg);
     background-size: cover;
     background-position: center;
@@ -295,11 +304,10 @@ header a {
     color: red;
 }
 
+/************************SLIDER*************************/
 
-/************************ADVERT*************************/
-
-
-.carrousel, .slide {
+.carrousel,
+.slide {
     width: 100%;
     height: 100%;
     margin: 0;
@@ -332,10 +340,11 @@ img {
     border-radius: 50px;
     margin: 1 0.2em 1em;
 }
-.menu label:hover,.menu label:focus {
+.menu label:hover,
+.menu label:focus {
     background: #1c87c9;
 }
-.slide-input{
+.slide-input {
     opacity: 0;
 }
 .slide-img {
@@ -346,7 +355,6 @@ img {
     left: 100%;
     z-index: 10;
     transition: left 0s 0.75s;
-    
 }
 [id^="slide"]:checked + .slide-img {
     left: 0;
@@ -354,103 +362,103 @@ img {
     transition: left 0.65s ease-out;
 }
 
-
+/************************ANIMATION*************************/
 
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,800;);
 .snip1541 {
-  background-color: #fff;
-  color: #fff;
-  font-family: 'Open Sans', sans-serif;
-  font-size: 4px;
-  margin: 10px;
-  max-width: 315px;
-  min-width: 771px;
-  overflow: hidden;
-  position: relative;
-  text-align: center;
-  width: 100%;
+    background-color: #fff;
+    color: #fff;
+    font-family: "Open Sans", sans-serif;
+    font-size: 4px;
+    margin: 10px;
+    max-width: 315px;
+    min-width: 771px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    width: 100%;
 }
 
 .snip1541 * {
-  -webkit-box-sizing: border-box;
-  box-sizing: border-box;
-  -webkit-transition: all 0.45s ease;
-  transition: all 0.45s ease;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -webkit-transition: all 0.45s ease;
+    transition: all 0.45s ease;
 }
 
 .snip1541 img {
-  vertical-align: top;
-  max-width: 100%;
-  backface-visibility: hidden;
-  height: 380px;
-  width: 771px;
+    vertical-align: top;
+    max-width: 100%;
+    backface-visibility: hidden;
+    height: 380px;
+    width: 771px;
 }
 
 .snip1541 figcaption {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  align-items: center;
-  z-index: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  line-height: 1em;
-  opacity: 0;
-  -webkit-transform: translateX(75%) rotate(180deg);
-  transform: translateX(75%) rotate(180deg);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    align-items: center;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 1em;
+    opacity: 0;
+    -webkit-transform: translateX(75%) rotate(180deg);
+    transform: translateX(75%) rotate(180deg);
 }
 
 .snip1541 figcaption:before {
-  -webkit-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); 
-  background-color: rgb(37, 192, 202);
-  border-radius: 50%;
-  content: '';
-  height: 200px;
-  left: 50%;
-  position: absolute;
-  top: 50%;
-  width: 200px;
-  z-index: -1;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: rgb(37, 192, 202);
+    border-radius: 50%;
+    content: "";
+    height: 200px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    width: 200px;
+    z-index: -1;
 }
 
 .snip1541 h3 {
-  font-size: 3em;
-  font-weight: 400;
-  letter-spacing: 1px;
-  margin: 0;
-  text-transform: uppercase;
-  color:rgb(255, 229, 0);
+    font-size: 3em;
+    font-weight: 400;
+    letter-spacing: 1px;
+    margin: 0;
+    text-transform: uppercase;
+    color: rgb(255, 229, 0);
 }
 
 .snip1541 h3 span {
-  display: block;
-  font-weight: 800;
-  color:rgb(255, 229, 0);
+    display: block;
+    font-weight: 800;
+    color: rgb(255, 229, 0);
 }
 
 .snip1541 a {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  z-index: 1;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1;
 }
 
 .snip1541:hover > img,
 .snip1541.hover > img {
-  opacity: 0.1;
+    opacity: 0.1;
 }
 
 .snip1541:hover figcaption,
 .snip1541.hover figcaption {
-  -webkit-transform: translate(0px) rotate(0deg);
-  transform: translate(0px) rotate(0deg);
-  opacity: 1;
+    -webkit-transform: translate(0px) rotate(0deg);
+    transform: translate(0px) rotate(0deg);
+    opacity: 1;
 }
 
 .right {
@@ -464,4 +472,48 @@ img {
 .anime p {
     display: flex;
     text-align: center;
+}
+
+
+/************************ANY DESTINATION PAGE*************************/
+
+.any-dest-bg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    background-image: url('https://avatars.mds.yandex.net/i?id=a1e23703d00379e8de0bb0ddbfd94542_l-3509819-images-thumbs&n=13'); 
+    background-size: cover; 
+    background-repeat: no-repeat; 
+}
+
+.any-dest-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.7); 
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.options {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+}
+
+.option {
+    background-color: #2ecc71;
+    color: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.option:hover {
+    background-color: #27ae60;
 }

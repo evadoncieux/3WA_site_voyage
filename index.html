@@ -36,10 +36,10 @@
                 <div class="collapse navbar-collapse" id="navbarNavDropdown">
                     <ul class="navbar-nav w-100 justify-content-around">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#promos">Bons plans</a>
+                            <a class="nav-link active" aria-current="page" href="index.html#promos">Bons plans</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Vols</a>
+                            <a class="nav-link" href="ne_dest.html">Vols</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Hôtel</a>
@@ -57,65 +57,69 @@
     </div>
 
     <main>
-        <div class="main-bg search-box">
-            <div class="search-card">
-                <h2>Rechercher un séjour</h2>
+        <div class="search-bg search-box">
+            <div class="search-box">
 
-                <form>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="depart">Départ</label>
-                                <input type="text" class="form-control" id="depart" name="depart">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="destination">Destination</label>
-                                <input type="email" class="form-control" id="destination" name="destination">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="date-depart">Date départ</label>
-                                <input type="date" class="form-control" id="age" name="age">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="date_arrivee">Date arrivée</label>
-                                <input type="date" class="form-control" id="date_arrivee" name="date_arrivee">
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="nb-voyageurs">Nombre de voyageurs</label>
-                                <input type="number" class="form-control" id="nb-voyageurs" name="nb-voyageurs">
-                            </div>
-                        </div>
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="country">Mode de transport</label>
-                                <select class="form-select" aria-label="Default select example">
-                                    <option selected>Choisissez votre mode de transport</option>
-                                    <option value="1">Vélo</option>
-                                    <option value="2">Car</option>
-                                    <option value="3">Train</option>
-                                    <option value="4">Avion</option>
-                                </select>
 
+                <div class="overlay-card">
+                    <h2>Rechercher un séjour</h2>
+
+                    <form>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="depart">Départ</label>
+                                    <input type="text" class="form-control" id="depart" name="depart">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="destination">Destination</label>
+                                    <input type="email" class="form-control" id="destination" name="destination">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <button type="submit" class="btn btn-primary submit">Rechercher</button>
-                </form>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="date-depart">Date départ</label>
+                                    <input type="date" class="form-control" id="age" name="age">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="date_arrivee">Date arrivée</label>
+                                    <input type="date" class="form-control" id="date_arrivee" name="date_arrivee">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="nb-voyageurs">Nombre de voyageurs</label>
+                                    <input type="number" class="form-control" id="nb-voyageurs" name="nb-voyageurs">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <label for="country">Mode de transport</label>
+                                    <select class="form-select" aria-label="Default select example">
+                                        <option selected>Choisissez votre mode de transport</option>
+                                        <option value="1">Vélo</option>
+                                        <option value="2">Car</option>
+                                        <option value="3">Train</option>
+                                        <option value="4">Avion</option>
+                                    </select>
+
+                                </div>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary submit">Rechercher</button>
+                    </form>
+                </div>
             </div>
         </div>
-        </div>
+        <!-- </div> -->
 
         <hr class="rounded">
 
