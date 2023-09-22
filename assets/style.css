@@ -339,12 +339,13 @@ header a {
 }
 img {
     max-width: 100%;
+    height: auto;
 }
 .slider-container {
     max-width: 800px;
     position: relative;
     margin: auto;
-    height: 400px;
+    height: 500px;
     overflow: hidden;
 }
 .menu {
@@ -373,7 +374,7 @@ img {
 }
 .slide-img {
     width: 100%;
-    height: 325px;
+    height: 430px;
     position: absolute;
     top: 0;
     left: 100%;
@@ -385,6 +386,7 @@ img {
     z-index: 100;
     transition: left 0.65s ease-out;
 }
+
 
 /************************ANIMATION*************************/
 
