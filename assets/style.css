@@ -26,6 +26,7 @@ hr.rounded {
     background-color: rgba(255, 255, 255, 0.8);
     width: 100wv;
     height: 100vh;
+    overflow: auto;
 }
 
 .form-container input,
@@ -195,7 +196,7 @@ header a {
 
 .overlay-card {
     position: absolute;
-    top: 20vh;
+    top: 30vh;
     left: 22vw;
     width: 60vw;
     height: 300px;
@@ -203,6 +204,8 @@ header a {
     background-color: rgba(255, 255, 255, 0.7);
     padding: 50px;
     border-radius: 30px;
+    max-height: 80vh; /* Adjust the value as needed */
+    overflow-y: auto;
 }
 
 .search-card input {
